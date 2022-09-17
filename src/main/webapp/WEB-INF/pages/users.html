@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+
+    <title>Users</title>
+</head>
+<body>
+<h2 align="center"> Пользователи</h2>
+<table border="1" width="100%">
+    <tr>
+        <th bgcolor="#7fff00">ID</th>
+        <th bgcolor="red">Name</th>
+        <th bgcolor="#bc8f8f">Surname</th>
+        <th bgcolor="#4169e1">Age</th>
+        <th bgcolor="#e9967a">Profession</th>
+        <th bgcolor="#dcdcdc">Action</th>
+    </tr>
+
+    <tr th:each="user : ${userList}">
+
+        <td bgcolor="#ffe4c4" th:text="${user.getId()}"></td>
+        <td bgcolor="#ffe4c4" th:text="${user.getName()}"></td>
+        <td bgcolor="#ffe4c4" th:text="${user.getSurname()}"></td>
+        <td bgcolor="#ffe4c4" th:text="${user.getAge()}"></td>
+        <td bgcolor="#ffe4c4" th:text="${user.getProfession()}"></td>
+
+        <td bgcolor="#ffe4c4">
+            <a th:href="@{'/change/' + ${user.getId()}}">
+                <input type="submit" value="change"/></a>
+            <form th:method="DELETE" th:action="@{'/delete/' + ${user.getId()}}"><input type="submit" value="Delete"/>
+            </form>
+        </td>
+    </tr>
+
+</table>
+<p></p>
+<a style="background-color: rgb(150, 250, 150); color: rgb(0, 0, 0);
+border:1px rgb(0, 0, 100)  solid; padding: 3px" th:href="@{'/add/'}">Add new user</a>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

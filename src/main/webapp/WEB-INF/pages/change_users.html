@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+    <title>Change</title>
+</head>
+<body>
+
+<form th:method="POST" th:action="@{/change}" th:object="${user}">
+
+    <label>Name:
+    <input type="text" th:field="*{name}" />
+    </label>
+    <label>Surname:
+    <input type="text" th:field="*{surname}" />
+    </label>
+    <label>Age:
+    <input type="text" th:field="*{age}" />
+    </label>
+    <label>Profession:
+    <input type="text" th:field="*{profession}" />
+    </label>
+
+    <input type="submit" value="Change user">
+
+</form>
+
+</body>
+</html>
