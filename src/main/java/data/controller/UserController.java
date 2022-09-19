@@ -1,11 +1,11 @@
-package MVC_Hibernate.controller;
+package data.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import MVC_Hibernate.model.User;
-import MVC_Hibernate.service.UserService;
+import data.model.User;
+import data.service.UserService;
 
 import java.util.List;
 

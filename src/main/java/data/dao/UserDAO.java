@@ -1,6 +1,6 @@
-package MVC_Hibernate.dao;
+package data.dao;
 
-import MVC_Hibernate.model.User;
+import data.model.User;
 
 import java.util.List;
 

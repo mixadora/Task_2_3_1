@@ -1,4 +1,4 @@
-package MVC_Hibernate.model;
+package data.model;
 
 import javax.persistence.*;
 

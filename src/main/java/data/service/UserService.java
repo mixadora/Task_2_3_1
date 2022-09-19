@@ -1,6 +1,6 @@
-package MVC_Hibernate.service;
+package data.service;
 
-import MVC_Hibernate.model.User;
+import data.model.User;
 
 import java.util.List;
 

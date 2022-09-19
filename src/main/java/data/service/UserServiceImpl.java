@@ -1,10 +1,10 @@
-package MVC_Hibernate.service;
+package data.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import MVC_Hibernate.dao.UserDAO;
-import MVC_Hibernate.model.User;
+import data.dao.UserDAO;
+import data.model.User;
 
 import java.util.List;
 

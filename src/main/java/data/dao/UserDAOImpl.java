@@ -1,7 +1,8 @@
-package MVC_Hibernate.dao;
+package data.dao;
 
-import MVC_Hibernate.model.User;
+import data.model.User;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
