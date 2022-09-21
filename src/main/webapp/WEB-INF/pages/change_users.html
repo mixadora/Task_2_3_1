@@ -10,16 +10,16 @@
 <form th:method="POST" th:action="@{/change}" th:object="${user}">
 
     <label>Name:
-    <input type="text" th:field="*{name}" />
+        <input type="text" th:field="*{name}" />
     </label>
     <label>Surname:
-    <input type="text" th:field="*{surname}" />
+        <input type="text" th:field="*{surname}" />
     </label>
     <label>Age:
-    <input type="text" th:field="*{age}" />
+        <input type="text" th:field="*{age}" />
     </label>
     <label>Profession:
-    <input type="text" th:field="*{profession}" />
+        <input type="text" th:field="*{profession}" />
     </label>
 
     <input type="submit" value="Change user">
