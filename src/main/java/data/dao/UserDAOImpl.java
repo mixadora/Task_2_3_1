@@ -31,8 +31,8 @@ public class UserDAOImpl implements UserDAO {
     }
 
     @Override
-    public void change(User user) {
-        entityManager.merge(user);
+    public User change(User user) {
+        return entityManager.merge(user);
     }
 
 
